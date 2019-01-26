@@ -156,10 +156,14 @@ body a:hover
 
 .section-title-holder
 {
-    background-color:#357266;
+    background-color:#C81D25;
     width: 370px;
     height: 370px;    
     z-index: 2;
+}
+
+#undefined-sticky-wrapper {
+    height: 65px;
 }
 
 
@@ -171,7 +175,7 @@ body a:hover
 .section-num span
 {    
     margin-left: -64px;
-    color: #55B286;
+    color: #E6989B;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 180px;
@@ -344,7 +348,7 @@ h1.big-title
 
 #services .section-title-holder.left
 {
-    background-color: #94E8B4;
+    background-color: #2978A0;
 }
 
 
@@ -355,7 +359,7 @@ h1.big-title
 
 #services .section-title-holder span
 {
-    color: #55B286;
+    color: #8AB5CB;
 }
 
 .service-holder 
