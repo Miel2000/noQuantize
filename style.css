@@ -1733,3 +1733,10 @@ footer
         top: -84px;
     }
 }
+
+
+/* surcharge */
+
+#undefined-sticky-wrapper.sticky-wrapper {
+    bakcground-color: #2978A0;
+}
