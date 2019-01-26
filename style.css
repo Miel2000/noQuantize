@@ -156,7 +156,7 @@ body a:hover
 
 .section-title-holder
 {
-    background-color:#C81D25;
+    background-color:rgb(255,255,255);
     width: 370px;
     height: 370px;    
     z-index: 2;
@@ -348,7 +348,7 @@ h1.big-title
 
 #services .section-title-holder.left
 {
-    background-color: #2978A0;
+    background-color: rgb(0,0,0);
 }
 
 
@@ -1672,6 +1672,9 @@ footer
     {
         display: none !important;
     }
+    #undefined-sticky-wrapper {
+        height: 60px;
+    }
 
 
 }
@@ -1735,8 +1738,54 @@ footer
 }
 
 
-/* surcharge */
+/******** surcharge  *************/
 
 #undefined-sticky-wrapper.sticky-wrapper {
-    bakcground-color: #2978A0;
+    background-color: rgb(0,0,0)!important;
+    height: 60px;
+}
+
+li {
+    display:flex;
+}
+
+#header-main-menu {
+    background-color:rgb(0,0,0)
+}
+/*  image dans chacunes des sections */
+
+div #services.section {
+    background-image:url('demo-images/noquantizR0.jpg')  !important;
+    background-position: center;
+}
+
+
+div #news.section {
+    background-image:url('demo-images/dos1.jpg') !important;
+}
+
+div #video.section {
+    background-image:url('demo-images/') c !important;
+}
+
+
+
+/* fixe flex_box dans le toggle */
+
+#albumImg {
+
+    display:flex;
+    justify-content: flex-end;
+
+}
+
+
+/*  texte des entry-title  */
+
+.entry-title.colorL {
+    color:rgb(255,255,255);
+}
+
+.entry-title.colorR {
+    color:rgba(117, 70, 70, 0.401);
 }
