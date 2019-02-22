@@ -156,7 +156,7 @@ body a:hover
 
 .section-title-holder
 {
-    background-color:rgb(255,255,255);
+    background-color:#221c5a;
     width: 370px;
     height: 370px;    
     z-index: 2;
@@ -1102,7 +1102,7 @@ span.contact-form-not-valid-tip
 
 footer
 {
-    background-color: #221C5A;
+    background-color: #000;
 }
 
 .footer
@@ -1127,8 +1127,11 @@ footer
 
 .footer a
 {
+    text-align: center;
     color: #5b5881;
 }
+
+
 
 .social-footer a 
 {
@@ -1757,8 +1760,9 @@ footer
     height: 60px;
 }
 
-li {
+#slider1 li {
     display:flex;
+    
 }
 
 #header-main-menu {
@@ -1768,17 +1772,31 @@ li {
 
 div #services.section {
     background-image:url('demo-images/noquantizR0.jpg')  !important;
-    background-position: center;
+    background-repeat: no-repeat  !important;
+    background-position: center  !important;
+    background-position: 248px -283px !important;
 }
 
 
 div #news.section {
-    background-image:url('demo-images/dos1.jpg') !important;
+
+ 
+    background-image:url('demo-images/remerciement010.jpg') !important;
+    background-repeat: no-repeat  !important;
+    background-size: contain  !important;
+    background-position: center top !important;
+    
 }
 
+
 div #video.section {
-    background-image:url('demo-images/') c !important;
+    background-image:url('demo-images/BombCario.jpg')  !important;
+    background-size: contain  !important;
+    background-repeat: no-repeat  !important;
+    background-position: center top  !important;
 }
+
+
 
 
 
@@ -1804,7 +1822,7 @@ div #video.section {
 
 
 .lightSoundCloud {
-    -webkit-box-shadow: 15px 22px 89px 23px rgba(255,255,255,1);
+-webkit-box-shadow: 15px 22px 89px 23px rgba(255,255,255,1);
 -moz-box-shadow: 15px 22px 89px 23px rgba(255,255,255,1);
 box-shadow: 15px 22px 89px 23px rgba(255,255,255,1);
 }
@@ -1817,6 +1835,10 @@ box-shadow: 15px 22px 89px 23px rgba(255,255,255,1);
 
 }
 
+
+.extra-content-full-width {
+    background: #000;
+}
 
 
 
@@ -1837,8 +1859,6 @@ box-shadow: 15px 22px 89px 23px rgba(255,255,255,1);
     .section-title-holder.right {
         background-color: black;
     }
- 
-
 }
 
 
@@ -1850,7 +1870,31 @@ box-shadow: 15px 22px 89px 23px rgba(255,255,255,1);
         background-color: black;
     }
     
+    div #services.section {
+        background-position: -54px -328px !important;
+    }
+   
+}
 
+
+
+@media screen and (max-width: 1020px) {    
+    .side-bar {
+        display:none;
+    }
+
+  
+
+    .section-title-holder.right {
+        background-color: black;
+    }  
+}
+
+@media screen and (max-width: 1270px) {   
+
+    div #services.section {
+        background-position: 136px -283px !important;
+    }
 }
 
 
@@ -2020,3 +2064,263 @@ box-shadow: 15px 22px 89px 23px rgba(255,255,255,1);
   }
   
 
+.menu-wrapper.center-relative.section-services {
+    background-color: transparent;
+}
+
+.menu-wrapper.center-relative.section-news {
+    background-color: transparent;
+}
+
+.menu-wrapper.center-relative.section-video {
+    background-color: transparent;
+}
+
+
+
+
+/******* SIDE BAR TEST ****/ 
+
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+* {
+  transition: 0.33s ease;
+}
+body {
+  background-color: #9ab;
+}
+.rela-block {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.side-bar {
+  background-image: url('demo-images/remerciement010.jpg');
+  z-index: 100;
+  position: fixed;
+  width: 80px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 4px 0px 25px -1px rgba(0,0,0,0.5);
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.33s ease;
+}
+.side-bar:hover {
+  width: 250px;
+}
+.side-bar:hover .side-button::before {
+  left: 6%;
+  transition: 0.33s ease, left 0.25s 0.15s ease;
+}
+.side-bar:hover .hover-svg {
+  height: 130px;
+  width: 130px;
+}
+.side-container {
+  position: absolute;
+  width: 100%;
+}
+.side-container.top {
+  height: 20%;
+  top: 1%;
+}
+.side-container.middle {
+  padding-top: 10px;
+  height: 65%;
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.hover-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 80px;
+  width: 80px;
+  fill: none;
+  stroke: rgba(0,0,0,0.5);
+  stroke-width: 2;
+  cursor: pointer;
+  transition: 0s ease, height 0.33s ease, width 0.33s ease;
+}
+.hover-svg:hover {
+  stroke: #000;
+}
+.side-button {
+  height: 15%;
+  margin: 5px 0;
+  background-color: #e4e9e9;
+  cursor: pointer;
+}
+.side-button:hover {
+  background-image: url("demo-images/chat.gif");
+  background-position: top;
+  color:#e4e9e9;
+}
+.side-button::before {
+  position: absolute;
+  top: 50%;
+  left: -250px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  transition: 0.33s ease;
+}
+.side-button::after {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-size: cover !important;
+  transition: 0.33s ease;
+}
+.side-button.facebook::before {
+  content: "Facebook";
+  
+}
+.side-button.facebook:after {
+  background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Facebook-128.png") no-repeat center;
+
+}
+.side-button.twitter::before {
+  content: "Twitter";
+}
+.side-button.twitter:after {
+  background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Twitter-07-128.png") no-repeat center;
+}
+.side-button.instagram::before {
+  content: "Instagram";
+}
+.side-button.instagram:after {
+  background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Instagram-128.png") no-repeat center;
+}
+.side-button.soundcloud::before {
+  content: "Soundcloud";
+}
+.side-button.soundcloud:after {
+  background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_SoundCloud-128.png") no-repeat center;
+}
+.side-button.linked-in::before {
+  content: "LinkedIn";
+}
+.side-button.linked-in:after {
+  background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_LinkedIn-128.png") no-repeat center;
+}
+.side-button.pinterest::before {
+  content: "Pinterest";
+}
+.side-button.pinterest:after {
+  background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Pinterest-23-128.png") no-repeat center;
+}
+.plus-button {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+  height: 75px;
+  width: 75px;
+  border-radius: 100%;
+  background-color: #e91e63;
+  box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.58);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: scale(0.92);
+          transform: scale(0.92);
+}
+.plus-button::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 28px;
+  font-weight: 600;
+}
+.plus-button:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  box-shadow: 3px 3px 12px 2px rgba(0,0,0,0.5);
+}
+.plus-button:active {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+  box-shadow: 2px 3px 11px 1px rgba(0,0,0,0.53);
+}
+.plus-button.open {
+  -webkit-transform: rotate(45deg) scale(0.92);
+          transform: rotate(45deg) scale(0.92);
+  background-color: #333;
+  box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.58);
+}
+.plus-button.open:hover {
+  -webkit-transform: scale(1) rotate(45deg);
+          transform: scale(1) rotate(45deg);
+  box-shadow: 3px 3px 12px 2px rgba(0,0,0,0.5);
+}
+.plus-button.open:active {
+  -webkit-transform: scale(0.96) rotate(45deg);
+          transform: scale(0.96) rotate(45deg);
+  box-shadow: 2px 3px 11px 1px rgba(0,0,0,0.53);
+}
+.social-button {
+  position: absolute;
+  bottom: 43px;
+  right: 41px;
+  height: 50px;
+  width: 50px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  background-size: 153% !important;
+  border-radius: 100%;
+  box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.4);
+  cursor: pointer;
+  z-index: 99;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.social-button:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  transition: 0.35s cubic-bezier(0.3, 0.2, 0, 2.5);
+}
+.social-button.twitter-button {
+  background: url("https://cdn4.iconfinder.com/data/icons/social-icon-4/842/twitter-256.png") no-repeat center;
+}
+.social-button.twitter-button.active {
+  bottom: 110px;
+  right: 21px;
+}
+.social-button.facebook-button {
+  background: url("https://cdn4.iconfinder.com/data/icons/social-icon-4/842/facebook-256.png") no-repeat center;
+}
+.social-button.facebook-button.active {
+  bottom: 105px;
+  right: 73px;
+}
+.social-button.pinterest-button {
+  background: url("https://cdn4.iconfinder.com/data/icons/social-icon-4/842/pinterest-256.png") no-repeat center;
+}
+.social-button.pinterest-button.active {
+  bottom: 67px;
+  right: 109px;
+}
+.social-button.insta-button {
+  background: url("https://cdn4.iconfinder.com/data/icons/social-icon-4/842/instagram-256.png") no-repeat center;
+}
+.social-button.insta-button.active {
+  bottom: 15px;
+  right: 105px;
+}
