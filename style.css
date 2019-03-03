@@ -2168,7 +2168,7 @@ body {
 }
 .side-button:hover {
   background-image: url("demo-images/chat.gif");
-  background-position: top;
+  background-position: 23% 10%;
   color:#e4e9e9;
 }
 .side-button::before {
