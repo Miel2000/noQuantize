@@ -1817,8 +1817,20 @@ div #video.section {
 }
 
 .entry-title.colorR {
-    color:rgb(204, 204, 204);
+    color:rgb(255, 255, 255);
 }
+
+.one_half.describ {
+text-align: center;
+
+
+}
+
+
+.one_half.describ p {
+    align-items: center;
+    
+    }
 
 
 .lightSoundCloud {
