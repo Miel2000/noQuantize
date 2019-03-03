@@ -1820,15 +1820,9 @@ div #video.section {
     color:rgb(255, 255, 255);
 }
 
-.one_half.describ {
-text-align: center;
 
-
-}
-
-
-.one_half.describ p {
-    align-items: center;
+ .one_half.describ  {
+    text-align:  center;
     
     }
 
